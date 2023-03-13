@@ -8,10 +8,10 @@
 #Write your code below this line 👇
 
 print("Welcome to the tipc calculator.")
-bill = float(input("What was the total bill? "))
+bill = float(input("What was the total bill? $"))
 perc = int(input("What percentage tip would you like to give? 10, 12 or 15? "))
 people = int(input("How many people to split the bill? "))
 
 result = round(((bill * (1 + (perc / 100))) / people), 2)
 
-print(f"Each person should pay: {result}")
+print(f"Each person should pay: ${result}")
